@@ -22,11 +22,9 @@ extern const int8_t led;
 
 extern const uint8_t helices;
 extern bool libera_helices;
-extern uint8_t contador;
-extern long int tempo_helices;
 
-extern float dados_erro[20];
-extern float dados_kp[20];
-extern float erro_banco;
-extern int8_t indice_erro;
+extern void funcao_registrarDados(float erro_atual, float kp_atual, float kd_atual);
+extern void funcao_envia_dados();
+extern void funcao_reseta_variaveis();
+
 #endif // Fim da verificação
